@@ -335,6 +335,91 @@ body.lock {
   color: #000000;
 }
 
+.footer {
+  padding: 50px 0px 0px 0px;
+  background-color: #f9f9f9;
+}
+
+.footer__top {
+  max-width: 1100px;
+  margin: 0px 0px 54px 0px;
+}
+
+.top-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-footer__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
+}
+
+.top-footer__item:nth-child(2) {
+  padding: 0px 0px 0px 100px;
+  border-left: 1px solid #e3e4e3;
+  border-right: 1px solid #e3e4e3;
+}
+
+.top-footer__item:last-child {
+  padding: 0px 0px 0px 100px;
+}
+
+.top-footer__link {
+  display: block;
+  margin: 0px 0px 15px 0px;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.top-footer__link:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.top-footer__title-contact {
+  font-family: Reef;
+  font-weight: 900;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0px 0px 20px 0px;
+}
+
+.top-footer__contacts-link {
+  display: block;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0px 0px 15px 0px;
+}
+
+.top-footer__contacts-link:nth-child(1) {
+  background: url("../img/tel-inp.svg") 0 0 no-repeat;
+  padding: 0px 0px 0px 28px;
+}
+
+.top-footer__contacts-link:nth-child(2) {
+  background: url("../img/mail.svg") 0 0 no-repeat;
+  padding: 0px 0px 0px 28px;
+}
+
+.top-footer__contacts-link:nth-child(3) {
+  background: url("../img/adress.svg") 0 0 no-repeat;
+  padding: 0px 0px 0px 28px;
+}
+
+.top-footer__soc-link {
+  margin: 0px 10px 0px 0px;
+}
+
+.bottom-footer__text {
+  font-size: 12px;
+  color: #3b3c3d;
+  margin: 0px 0px 10px 0px;
+}
+
 .popular-honey {
   padding: 113px 0px 0px 0px;
 }
@@ -1591,7 +1676,7 @@ body.lock {
 }
 
 .form-mailing__butn {
-  padding: 0px 15px;
+  padding: 0px 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1608,33 +1693,13 @@ body.lock {
   color: #000000;
   background-color: #fff;
   height: 56px;
-  padding: 0px 20px;
+  margin: 0px 15px;
 }
 
 .input {
   display: block;
-  padding: 18px 0px 18px 16px;
+  padding: 18px 11px 18px 16px;
   border-radius: 4px;
-}
-
-.input:focus::-webkit-input-placeholder {
-  visibility: hidden;
-}
-
-.input:focus::-moz-placeholder {
-  visibility: hidden;
-}
-
-.input:focus:-ms-input-placeholder {
-  visibility: hidden;
-}
-
-.input:focus::-ms-input-placeholder {
-  visibility: hidden;
-}
-
-.input:focus::placeholder {
-  visibility: hidden;
 }
 
 @media (min-width: 991.98px) {
@@ -1652,6 +1717,19 @@ body.lock {
 
   .submenu-header__link:hover {
     color: #e9705b;
+  }
+
+  .top-footer__link {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .top-footer__link:hover {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #0428f3;
   }
 
   .slider-honey__link {
@@ -1998,6 +2076,14 @@ body.lock {
     display: none;
   }
 
+  .top-footer__item:nth-child(2) {
+    padding: 0px 0px 0px 50px;
+  }
+
+  .top-footer__item:last-child {
+    padding: 0px 0px 0px 50px;
+  }
+
   .popular-honey {
     padding: 80px 0px 0px 0px;
   }
@@ -2163,6 +2249,48 @@ body.lock {
     display: none;
   }
 
+  .footer {
+    padding: 30px 0px 10px 0px;
+  }
+
+  .footer__top {
+    margin: 0px 0px 14px 0px;
+  }
+
+  .top-footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .top-footer__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    margin: 0px 0px 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .top-footer__item:nth-child(2) {
+    border: none;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .top-footer__item:last-child {
+    padding: 0px 0px 0px 0px;
+  }
+
   .popular-honey {
     padding: 60px 0px 0px 0px;
   }
@@ -2326,6 +2454,12 @@ body.lock {
   .item-header__bag {
     width: 25px;
     height: 25px;
+  }
+
+  .top-footer__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 
   .content-catalog__link {
