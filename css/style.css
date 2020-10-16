@@ -307,8 +307,8 @@ body.lock {
   position: absolute;
   background: #ffc700;
   border: 1px solid #ffffff;
-  top: -9px;
-  right: -9px;
+  top: -6px;
+  right: -4px;
   width: 17px;
   height: 17px;
   border-radius: 50%;
@@ -1150,8 +1150,9 @@ body.lock {
   transition: all 0.3s ease 0s;
   position: absolute;
   width: 100%;
-  top: 0px;
+  top: 2px;
   left: 0;
+  border-radius: 5px;
   border-bottom: 28px solid #ffc700;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -1161,8 +1162,9 @@ body.lock {
   content: "";
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: 1px;
   left: 0;
+  border-radius: 5px;
   border-top: 28px solid #ffc700;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -2353,9 +2355,14 @@ body.lock {
     width: 203px;
   }
 
+  .slider-reviews__img img {
+    border-radius: 10px 10px 0px 0px;
+  }
+
   .slider-reviews__info {
     -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+    border-radius: 0px 0px 10px 10px;
   }
 
   .about-honey {
