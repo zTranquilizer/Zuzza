@@ -123,4 +123,25 @@ $(document).ready(function () {
 	})
 	//$("#phone").mask("+7(000) 000-00-00");
 	$('.phone_us').mask('+7(000) 000-00-00');
+	function quantityGoods() {
+		let counter = 1;
+		$(".actions-product__plus").click(function (e) {
+			e.preventDefault();
+			$(".actions-product__quantity").html(counter + 1);
+			counter = counter + 1;
+		})
+		$(".actions-product__minus").click(function (e) {
+			e.preventDefault();
+			if (counter <= 1) {
+
+			}
+			else {
+				counter = counter - 1;
+				$(".actions-product__quantity").html(counter);
+
+			}
+		})
+	}
+	quantityGoods();
+
 });
